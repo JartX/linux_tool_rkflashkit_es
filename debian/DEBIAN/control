@@ -5,4 +5,4 @@ Maintainer: Zhong Wang <linuxerwang@gmail.com>
 Section: System
 Priority: optional
 Depend: python-gtk2
-Description: Flash kit for devices based on rk3066/rk3188.
+Description: Flash kit Linux para los dipositivos de Bq v1 y v2 incluyendo Quad Core.

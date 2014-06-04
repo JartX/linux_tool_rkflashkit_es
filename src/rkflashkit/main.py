@@ -169,7 +169,7 @@ class MainWindow(gtk.Window):
 
     # NAND partition selector
 
-    frame = BoxFrame('NAND Partitions')
+    frame = BoxFrame('Particiones Nand')
     box.pack_start(frame, expand=False)
 
     self.__partition_liststore = gtk.ListStore(str, int, int)
@@ -182,14 +182,14 @@ class MainWindow(gtk.Window):
 
     # Image file selector
 
-    frame = BoxFrame('Image File to Flash')
+    frame = BoxFrame('Imagen .img a flashear')
     box.pack_start(frame, expand=False)
 
     self.__image_entry = gtk.Entry()
     self.__image_entry.connect('changed', self.__refresh_buttons)
     frame.pack_start(self.__image_entry)
 
-    self.__image_select_button = gtk.Button('Choose')
+    self.__image_select_button = gtk.Button('Elegir')
     self.__image_select_button.connect('clicked', self.__choose_image_file)
     frame.pack_start(self.__image_select_button, expand=False, fill=False)
 
@@ -198,7 +198,7 @@ class MainWindow(gtk.Window):
     frame = BoxFrame('Actions', opt_hbox=False, spacing=20)
     box.pack_start(frame, expand=False)
 
-    self.__flash_button = gtk.Button('Flash image')
+    self.__flash_button = gtk.Button('Flashear Imagen')
     self.__flash_button.connect('clicked', self.__flash_image_file)
     frame.pack_start(self.__flash_button, expand=False, fill=False)
 
@@ -206,19 +206,19 @@ class MainWindow(gtk.Window):
     self.__cmp_button.connect('clicked', self.__cmp_part_with_file)
     frame.pack_start(self.__cmp_button, expand=False, fill=False)
 
-    self.__backup_button = gtk.Button('Backup Partition')
+    self.__backup_button = gtk.Button('Guardar Partición')
     self.__backup_button.connect('clicked', self.__backup_partition)
     frame.pack_start(self.__backup_button, expand=False, fill=False)
 
-    self.__erase_button = gtk.Button('Erase Partition')
+    self.__erase_button = gtk.Button('Borrar partición')
     self.__erase_button.connect('clicked', self.__erase_partition)
     frame.pack_start(self.__erase_button, expand=False, fill=False)
 
-    self.__reboot_button = gtk.Button('Reboot Device')
+    self.__reboot_button = gtk.Button('Reiniciar dispositivo')
     self.__reboot_button.connect('clicked', self.__reboot_device)
     frame.pack_start(self.__reboot_button, expand=False, fill=False)
 
-    self.__clear_log_button = gtk.Button('Clear Log')
+    self.__clear_log_button = gtk.Button('Borrar Log')
     self.__clear_log_button.connect('clicked', self.__clear_log)
     frame.pack_start(self.__clear_log_button, expand=False, fill=False)
 
@@ -243,7 +243,7 @@ class MainWindow(gtk.Window):
 
   def __choose_image_file(self, widget):
     file_chooser = gtk.FileChooserDialog(
-        'Choose Image File to Flash',
+        'Elegir imagen .img a flashear',
         self,
         gtk.FILE_CHOOSER_ACTION_OPEN, (
             gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL,
@@ -296,7 +296,7 @@ class MainWindow(gtk.Window):
 
   def __choose_backup_file(self):
     file_chooser = gtk.FileChooserDialog(
-        'Create a Backup File',
+        'Crear copia de seguridad de la partición',
         self,
         gtk.FILE_CHOOSER_ACTION_SAVE, (
             gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL,
