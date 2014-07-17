@@ -156,7 +156,7 @@ class MainWindow(gtk.Window):
   def __create_left_ui(self, box):
     # Device selector
 
-    frame = BoxFrame('Devices')
+    frame = BoxFrame('Dispositivos')
     box.pack_start(frame, expand=False)
 
     self.__device_liststore = gtk.ListStore(str, object)
