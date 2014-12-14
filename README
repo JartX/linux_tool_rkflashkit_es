@@ -1,6 +1,11 @@
 rkflashkit "Herramienta para flashear roms de RK30 y RK31 desde cualquier distribución Linux"
 ==========
 
+
+-Si usas lxde, gnome, xfce o unity escribe: ./rkflash.sh gnome
+-Si usas kde escribe: ./rkflash.sh kde
+
+
 rkflashkit está compuesto por código Open Source, (GPL v2).
 
 
@@ -53,9 +58,6 @@ Antes de instalar el paquete de rkflashkit, tienes que instalar la siguiente dep
 
 $ sudo apt-get install python-gtk2
 
-y después
-
-$ sudo dpkg -i rkflashkit_0.1.1_all.deb
 
 Una vez instalado, deberías encontrarlo en tu menu de aplicaciones.
 
