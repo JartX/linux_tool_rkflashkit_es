@@ -195,7 +195,7 @@ class MainWindow(gtk.Window):
 
     # Action buttons
 
-    frame = BoxFrame('Actions', opt_hbox=False, spacing=20)
+    frame = BoxFrame('Acciones', opt_hbox=False, spacing=20)
     box.pack_start(frame, expand=False)
 
     self.__flash_button = gtk.Button('Flashear Imagen')
