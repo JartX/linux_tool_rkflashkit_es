@@ -1,8 +1,0 @@
-Package: rkflashkit
-Version: 0.1.1
-Architecture: all
-Maintainer: Zhong Wang <linuxerwang@gmail.com> and Sag in Spain
-Section: System
-Priority: optional
-Depend: python-gtk2
-Description: Flash kit Linux para los dipositivos de Bq v1 y v2 incluyendo Quad Core.

@@ -1,7 +1,0 @@
-?package(rkflashkit): \
-    needs="X11" \
-    section="Applications/System" \
-    title="rkflashkit" \
-    command="rkflashkit-pkexec" \
-    icon="/usr/share/rkflashkit/images/rkflashkit.png"
-

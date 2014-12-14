@@ -4,7 +4,7 @@ rkflashkit "Herramienta para flashear roms de RK30 y RK31 desde cualquier distri
 
 -Si usas lxde, gnome, xfce o unity escribe: ./rkflash.sh gnome
 -Si usas kde escribe: ./rkflash.sh kde
-
+==============================================================
 
 rkflashkit está compuesto por código Open Source, (GPL v2).
 
