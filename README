@@ -44,24 +44,6 @@ Release 0.1.1:
 Release 0.1.0:
 * Initial import.
 
-
-Construcción del paquete .deb
-=====
-
-$ ./waf debian
-
-
-Instalación
-============
-
-Antes de instalar el paquete de rkflashkit, tienes que instalar la siguiente dependencia:
-
-$ sudo apt-get install python-gtk2
-
-
-Una vez instalado, deberías encontrarlo en tu menu de aplicaciones.
-
-
 Fuentes
 =====
     https://github.com/Galland/rkflashtool_rk3066
