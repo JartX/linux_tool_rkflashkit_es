@@ -15,9 +15,9 @@ Lenguajes de programación:
 
 -GTK2.
 
+Linux rkflash-es rkflashkit is an open sourced (GPL v2) toolkit for flashing Linux kernel images (Picuntu) to rk3066/rk3188/rk3288 based devices. It's programmed with python and gtk3. The kernel program is adapted from Galland's rkflashtool_rk3066 which is in turn based on cyteen's rk3066-rkflashtool.
 
 rkflashkit talks to the devices through vpelletier's python-libusb1 which is a python wrapper of libusb. For convenience the python-libusb1 programs are included in rkflashkit. Also included is binary created for Ubuntu.
-
 
 Features
 ========
